@@ -39,3 +39,25 @@ h1 {
 }
 
 /* Your CSS below here */
+article {
+  /* Fallback */
+  background-image: url("../img/top-image.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+article {
+  background:
+  url("../img/top-image.png") no-repeat top,
+  url("../img/bottom-image.png") no-repeat bottom,
+  linear-gradient(to bottom, black, 10%, white) no-repeat top / 100% 20%,
+  linear-gradient(to top, black, 10%, white) no-repeat bottom / 100% 20%,
+  white;
+  border-top: 1mm solid red;
+  border-bottom: 1mm solid red;
+}
+
+h1 {
+  background-image: url("../img/logo.png");
+  background-size: cover;
+}
