@@ -24,7 +24,7 @@ address {
   right: 20mm;
 }
 
-h1 {
+article > h1 {
   position: absolute;
   top: 12mm;
   left: 20mm;
@@ -39,6 +39,11 @@ h1 {
 }
 
 /* Your CSS below here */
+p {
+  font-size: 11px;
+  text-align:justify;
+}
+
 article {
   /* Fallback */
   background-image: url("../img/top-image.png");
@@ -57,11 +62,60 @@ article {
   border-bottom: 1mm solid red;
 }
 
-h1 {
+article > h1 {
   background-image: url("../img/logo.png");
   background-size: cover;
   /* filter: drop-shadow(10px 8px 10px black); */
   /* More cross-browser friendly */
   box-shadow: 10px 8px 10px black;
   border-radius: 100%;
+}
+
+header {
+  text-align: center;
+  padding: 20mm 0;
+  margin-top: 25%
+}
+
+header > h1 {
+  font-size: 35px;
+  font-weight: 100;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+}
+
+h2 {
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header > h4 {
+  margin: 10px 10px 5px 10px;
+  font-size: 9px;
+  line-height: 18px;
+  text-align: center;
+  font-style: italic
+}
+
+header > h5 {
+  margin: 5px 10px 20px 10px;
+  font-size: 8px;
+  line-height: 14px;
+  text-align: center
+}
+
+hr {
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,.75),rgba(0,0,0,0))
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -20mm;
+}
+
+.content section {
+  margin: 10px;
 }
