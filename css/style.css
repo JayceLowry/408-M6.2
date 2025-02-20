@@ -60,4 +60,8 @@ article {
 h1 {
   background-image: url("../img/logo.png");
   background-size: cover;
+  /* filter: drop-shadow(10px 8px 10px black); */
+  /* More cross-browser friendly */
+  box-shadow: 10px 8px 10px black;
+  border-radius: 100%;
 }
